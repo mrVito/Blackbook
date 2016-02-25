@@ -1,0 +1,23 @@
+{
+  "name": "blackbook",
+  "version": "1.0.0",
+  "description": "A test application to compare front-end frameworks",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "github:laravel/elixir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrVito/Blackbook.git"
+  },
+  "keywords": [
+    "blackbook"
+  ],
+  "author": "Vytautas Lozickas <v.lozickas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrVito/Blackbook/issues"
+  },
+  "homepage": "https://github.com/mrVito/Blackbook#readme"
+}
