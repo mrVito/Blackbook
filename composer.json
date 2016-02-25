@@ -1,0 +1,21 @@
+{
+    "name": "mrvito/microcore",
+    "description": "A very small PHP framework",
+    "type": "project",
+    "license": "GPL 2.0",
+    "authors": [
+        {
+            "name": "Vytautas Lozickas",
+            "email": "v.lozickas@gmail.com"
+    	}
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    		"mrvito/microcore-framework": "~0.1"
+    	},
+    "autoload": {
+    	"psr-4": {
+        	"App\\": "app/"
+    	}
+    }
+}

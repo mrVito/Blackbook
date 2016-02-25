@@ -1,0 +1,22 @@
+host: blackbook.dev
+ip: 192.168.56.112
+
+sites:
+  - site: vue.blackbook.dev
+    in: /var/www/public-vue
+  - site: angular.blackbook.dev
+    in: /var/www/public-angular
+  - site: jquery.blackbook.dev
+    in: /var/www/public-jquery
+
+db:
+  - blackbook
+
+mysql:
+  host: localhost
+  user: blackbook
+  password: blackbook
+
+sync:
+  from: ./
+  to: /var/www/
