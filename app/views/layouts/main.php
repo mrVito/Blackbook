@@ -1,41 +1,20 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Microcore</title>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
-	<style type="text/css">
-		* {
-			font-family: "Source Sans Pro", sans-serif;
-			font-weight: 200;
-		}
-
-		body {
-			display: flex;
-			flex: 1;
-			align-content: center;
-			justify-content: center;
-		}
-
-		h1 {
-			font-size: 34pt;
-		}
-
-		hr {
-			border: none;
-			border-top: 1px solid #ddd;
-		}
-
-		.container {
-			text-align: center;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>Blackbook</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Microcore is installed</h1>
-		<?=place('content')?>
-	</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Blackbook</a>
+        <?php View::inject('front.' . $version . '.navbar') ?>
+    </div>
+</nav>
+<div class="container">
+    <?php View::inject('front.' . $version . '.content') ?>
+</div>
 </body>
 </html>
-
