@@ -4,6 +4,7 @@
   "description": "A test application to compare front-end frameworks",
   "dependencies": {},
   "devDependencies": {
+    "bootstrap": "^3.3.6",
     "gulp": "^3.9.1",
     "laravel-elixir": "github:laravel/elixir"
   },

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Blackbook</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
