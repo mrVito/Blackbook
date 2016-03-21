@@ -67,8 +67,8 @@ echo -e "\n> Installing NodeJS and NPM...\n"
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null 2>&1
 apt-get -y install nodejs > /dev/null 2>&1
 
-echo -e "\n> Installing gulp and bower...\n"
-npm install -g gulp bower > /dev/null 2>&1
+echo -e "\n> Installing gulp...\n"
+npm install -g gulp > /dev/null 2>&1
 
 echo -e "\n> Installing xdebug...\n"
 apt-get -y install php5-xdebug > /dev/null 2>&1

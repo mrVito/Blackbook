@@ -1,0 +1,99 @@
+.form-inline {
+  @media (max-width: @screen-xs-max) {
+	.form-control {
+	  margin: 24px 0;
+	}
+  }
+}
+
+// ------------ checkbox ------------ //
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  color: @text-color;
+}
+
+input[type=checkbox] + label:hover {
+  color: @gray-lighter;
+}
+
+input[type=checkbox] + label:after {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  color: @gray;
+
+  transition: all 0.3s;
+}
+
+input[type=checkbox] + label:hover:after {
+  color: @gray-lighter;
+}
+
+input[type=checkbox]:checked + label:after {
+  line-height: 18px;
+  font-size: 18px;
+  color: @brand-primary;
+}
+
+// ------------ radio ------------ //
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  position: relative;
+  padding-left: 24px;
+}
+
+input[type=radio] + label:after {
+  content: "\f10c";
+  font-family: "FontAwesome";
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  color: lighten(@text-color, 65%);
+
+  transition: all 0.3s;
+}
+
+input[type=radio] + label:hover:after {
+  color: @gray-lighter;
+}
+
+input[type=radio]:checked + label:after {
+  content: "\f111";
+  line-height: 20px;
+  font-size: 18px;
+  color: @brand-primary;
+}
+
+// ------------ radio and checkbox ------------ //
+
+.form-horizontal .checkbox.checkbox-lg,
+.form-horizontal .checkbox-inline.checkbox-lg,
+.form-horizontal .radio.radio-lg,
+.form-horizontal .radio-inline.radio-lg {
+  padding-top: 12px;
+}

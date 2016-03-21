@@ -1,5 +1,5 @@
 host: blackbook.dev
-ip: 192.168.56.112
+ip: 192.168.30.100
 
 sites:
   - site: vue.blackbook.dev

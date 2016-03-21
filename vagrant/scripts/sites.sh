@@ -9,6 +9,7 @@ rm /etc/apache2/sites-enabled/000-default.conf > /dev/null 2>&1
 touch /etc/apache2/sites-available/$HOST.conf > /dev/null 2>&1
 cat > /etc/apache2/sites-available/$HOST.conf <<EOF
 <VirtualHost *:80>
+    ServerName $HOST
     DocumentRoot $DOC_ROOT
     ErrorLog \${APACHE_LOG_DIR}/error.log
     CustomLog \${APACHE_LOG_DIR}/access.log combined
