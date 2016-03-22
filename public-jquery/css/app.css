@@ -6803,6 +6803,10 @@ fieldset[disabled] .btn-transparent.focus {
 .thumbnail .caption {
   padding: 0;
 }
+.thumbnail {
+  background-color: #425564;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+}
 .thumbnail .card-title {
   padding: 9px;
   font-size: 18px;
