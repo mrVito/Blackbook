@@ -4,10 +4,12 @@
   "description": "A test application to compare front-end frameworks",
   "dependencies": {},
   "devDependencies": {
-    "bootstrap": "^3.3.6",
+    "laravel-elixir": "github:laravel/elixir",
     "gulp": "^3.9.1",
+    "bootstrap": "^3.3.6",
     "jquery": "^2.2.2",
-    "laravel-elixir": "github:laravel/elixir"
+    "angular": "^1.5.2",
+    "vue": "^1.0.18"
   },
   "repository": {
     "type": "git",
