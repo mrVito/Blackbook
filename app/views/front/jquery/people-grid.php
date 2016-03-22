@@ -1,6 +1,6 @@
 <h1>People</h1>
 <div class="row">
-    <div class="cols-xs-6 col-sm-4">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <div class="thumbnail">
             <img src="https://liferocking.com/wp-content/uploads/2014/01/justin-bieber-teen-vogue.jpg" alt="...">
             <div class="caption">
