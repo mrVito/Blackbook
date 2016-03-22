@@ -24,10 +24,10 @@ return array(
 	 * Database settings for MySQL database
 	 */
 	'database' => array(
-		'connect' =>    false,
+		'connect' =>    true,
 		'host' =>       'localhost',
-		'database' =>   'microcore',
-		'user' =>       'microcore',
-		'password' =>   'microcore'
+		'database' =>   'blackbook',
+		'user' =>       'blackbook',
+		'password' =>   'blackbook'
 	)
 );
