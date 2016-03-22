@@ -169,7 +169,7 @@ Blackbook.prototype.postRequest = function (url, callback) {
 };
 
 Blackbook.prototype.getApiUrl = function (action, param) {
-    return 'api\\' + action + '\\' + param;
+    return 'api/' + action + '/' + param;
 };
 
 module.exports = Blackbook;

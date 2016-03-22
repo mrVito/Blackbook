@@ -33,27 +33,23 @@ app.controller('MainController', function($scope, $http, blacklistFilter) {
     };
 
     $scope.getRequest = function (action, param) {
-        if(param === void 0) {
-            param = '';
-        }
-
         var url = getApiUrl(action, param);
 
         return $http.get(url);
     };
 
     $scope.postRequest = function (action, param) {
-        if(param === void 0) {
-            param = '';
-        }
-
         var url = getApiUrl(action, param);
 
         return $http.post(url);
     };
 
     var getApiUrl = function (action, param) {
-        return 'api\\' + action + '\\' + param;
+        if(param === void 0) {
+            param = '';
+        }
+
+        return 'api/' + action + '/' + param;
     };
 
     $scope.loadPeople();

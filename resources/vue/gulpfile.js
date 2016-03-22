@@ -6,5 +6,5 @@ elixir.config.assetsPath = 'src';
 
 elixir(function (mix) {
     mix.browserify('app.js')
-        .less('../../less/app.less');
+        .less('../../../less/app.less');
 });
