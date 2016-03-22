@@ -1,5 +1,6 @@
 <?php namespace App\Controllers;
 
+use Query;
 use Request;
 use View;
 
@@ -10,6 +11,8 @@ class FrontController
 		$domain = Request::getDomainUri();
 		$version = explode('.', $domain)[0];
 
-		return View::make('front.index', compact('version'));
+		$people = Query::selectFrom('people')->get();
+
+		return View::make('front.index', compact('version', 'people'));
 	}
 }

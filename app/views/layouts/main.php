@@ -13,7 +13,7 @@
     </div>
 </nav>
 <div class="container">
-    <?php View::inject('front.' . $version . '.content') ?>
+    <?php View::inject('front.' . $version . '.content', ['people' => $people]) ?>
 </div>
 <!-- Scripts -->
 <script src="js/app.js"></script>

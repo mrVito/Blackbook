@@ -1,17 +1,22 @@
 <h1>People</h1>
 <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <?foreach($people as $person):?>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-person="<?=$person['id']?>">
         <div class="thumbnail">
-            <img src="https://liferocking.com/wp-content/uploads/2014/01/justin-bieber-teen-vogue.jpg" alt="...">
+            <img src="<?=$person['photo']?>">
             <div class="caption">
-                <p class="card-title">Justin Bieber</p>
+                <p class="card-title"><?=$person['name']?></p>
                 <p>
-                    <a href="#" title="Hate this person" class="btn btn-transparent" role="button">
+                    <a href="#" data-hate="<?=$person['id']?>" title="Hate this person"
+                       class="btn btn-transparent js-hate-button" role="button"
+                    >
                         <span class="fa fa-thumbs-down"></span>
                         <span>&nbsp;Hate</span>
                     </a>
-                    <span class="text-muted">(15)</span>
-                    <a href="#" title="Un-hate this person" class="btn btn-transparent pull-right" role="button">
+                    <span class="text-muted">(<span class="js-hate-count"><?=$person['hates']?></span>)</span>
+                    <a href="#" title="Un-hate this person" data-hate="<?=$person['id']?>" style="display: none"
+                       class="btn btn-transparent pull-right js-unhate-button" role="button"
+                    >
                         <span class="fa fa-heart text-info"></span>
                         <span class="text-info">&nbsp;Un-hate</span>
                     </a>
@@ -19,4 +24,5 @@
             </div>
         </div>
     </div>
+    <?endforeach?>
 </div>

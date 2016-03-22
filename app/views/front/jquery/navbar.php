@@ -13,10 +13,10 @@
     </ul>
     <div class="navbar-form navbar-left">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" id="search-field" class="form-control" placeholder="Search">
         </div>
     </div>
     <div class="navbar-text navbar-right">
-        <span>Blackbook total: <strong>15</strong></span>
+        <span>Blackbook total: <strong id="blackbook-total"></strong></span>
     </div>
 </div>
