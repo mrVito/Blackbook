@@ -13,7 +13,7 @@ After that's done, run `vagrant ssh` and cd into `/var/www` dir.
 
 While in that directory run `composer install` and `npm install` (optional),
 
-Then cd into `db` dir and run `./migrate.sh`.
+Then cd into `db` dir and run `bash migrate.sh`.
 
 When all of that is done exit the ssh session and add these entries into your`/etc/hosts` file:
 
