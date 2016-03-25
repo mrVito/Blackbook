@@ -1,4 +1,4 @@
-INSERT IGNORE `people` (`name`, `photo`, `hates`) VALUES
+INSERT INTO `people` (`name`, `photo`, `hates`) VALUES
 ('Justin Bieber', 'https://s-media-cache-ak0.pinimg.com/736x/93/ec/b0/93ecb0ac13bfc63214188127813173b9.jpg', 0),
 ('Barbie', 'https://s-media-cache-ak0.pinimg.com/736x/b4/5b/11/b45b110840722c036272906d3e90e066.jpg', 0),
 ('Lady Gaga', 'http://media.charged.fm/photos/file_54bfdd76629ec.jpg', 0),
